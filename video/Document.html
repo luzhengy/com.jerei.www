@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/reset/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./lib/jquery-3.4.1.min.js"></script>
+    <script src="./js/index.js"></script>
+   
+</head>
+<body>
+    <!-- 捷瑞官网顶部导航 -->
+    <div class="topnav">
+           <a href="./index.html" class="index-logo">
+               <img src="./img/index-topnav/logo_index.png" alt="捷瑞数字">
+         </a>
+          <div class="topnav-right">
+                <ul class="topnav-right-ul">
+                    <li class="cur">
+                         <a href="">首页</a>
+                    </li>
+                    <li class="al">
+                        <a href="">案例</a>
+                        <ul class="selectDown">
+                            <li><a href="">数字展馆</a></li>
+                            <li><a href="">数字视觉</a></li>
+                            <li><a href="">虚拟现实</a></li>
+                            <li><a href="">指挥中心</a></li>
+                            <li><a href="">响应式网站</a></li>
+                            <li><a href="">新媒体运营</a></li>
+                            <li><a href="">全程电商</a></li>
+                            <li><a href="">企业营销管理</a></li>
+                        </ul>
+                    </li>
+                    <li class="fw">
+                        <a href="">服务</a>
+                        <ul  class="selectDown one">
+                            <li>产品与服务</li>
+                            <li><a href="">数字展馆</a></li>
+                            <li><a href="">数字多媒体</a></li>
+                            <li><a href="">数字视觉</a></li>
+                            <li><a href="">虚拟显示</a></li>
+                            <li><a href="">指挥中心</a></li>
+                            <li><a href="">响应式网站</a></li>
+                            <li><a href="">全程电商</a></li>
+                        </ul> 
+                        <ul  class="selectDown">
+                            <li>行业解决方案</li>
+                            <li><a href="">工程机械</a></li>
+                            <li><a href="">国防军工</a></li>
+                            <li><a href="">海洋牧场</a></li>
+                            <li><a href="">油田能源</a></li>
+                            <li><a href="">智慧教育</a></li>
+                        </ul>
+                    </li>
+                    <li class="gs"">
+                        <a href="">公司</a>
+                        <ul  class="selectDown">
+                            <li><a href="">公司简介</a></li>
+                            <li><a href="">资质荣誉</a></li>
+                            <li><a href="">企业文化</a></li>
+                            <li><a href="">公司图片</a></li>
+                            <li><a href="">联系我们</a></li>
+                        </ul>
+                    </li>
+                    <li class="dt">
+                        <a href="">动态</a>
+                        <ul>
+                             <li><a href="">公司新闻</a></li>
+                             <li><a href="">周年专题</a></li>
+                        </ul>
+                    </li>
+                    <li class="rc">
+                        <a href="">人才</a>
+                        <ul  class="selectDown">
+                            <li><a href="">人才机制</a></li>
+                            <li><a href="">员工激励</a></li>
+                            <li><a href="">招聘信息</a></li>
+                            <li><a href="">员工培训</a></li>
+                            <li><a href="">联系我们</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">招商加盟</a>
+                    </li>
+                    <li>
+
+                        <a href="">联系我们</a>
+                    </li>
+                </ul>
+                <div class="topnav-select">   
+                    <a href="" class="CN">中文</a>
+                    <i>|</i>
+                    <a href="" class="EN">EN</a>
+                    <i>|</i>
+                    <a href="" class="Espanol">Espanol</a>                    
+                </div>
+                <a href="" class="topnav-Pro">产品</a>
+        
+     </div>
+     <!--轮播图  -->
+     <div class="banner">
+          <div class="item banner-video">
+              <video src="" class="video">
+                  <source src="http://www.jerei.com/resources/video/jerei_banner.mp4" type="video/mp4">
+              </video>
+          </div>
+          <!-- <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div> -->
+     </div>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>
