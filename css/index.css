@@ -1,0 +1,847 @@
+/* 捷瑞顶部导航 */
+.topnav{
+    width: 100%;
+    height: 75px;
+}
+.topnav  .index-logo{
+    float: left;
+    margin-top: 15px;
+    margin-left: 48px;
+    width: 280px;
+    height: 45px;
+}
+.topnav .topnav-right{
+    position: relative;
+    float: right;
+}
+
+.topnav-right ul {
+    float: left;
+    margin-right: 75px;
+}
+.topnav-right ul  li{
+    position: relative;
+    float: left;
+    width: 128px;
+    height:100%;
+     line-height: 75px;
+    text-align: center;
+    font-size: 16px;
+    color: #313131;
+    font-weight: 700;
+    z-index: 2;
+}
+.topnav-right .cur a{
+    color: #ff6600;
+}
+.topnav-right  .topnav-select{
+     position: absolute;
+     top: 24px;
+     right: 107px;
+     width: 63px;
+     background-color: #fff;
+     height: 26px;
+     line-height: 26px;
+     padding-left: 29px;
+     border-radius: 13px;
+     border: 1px solid #ccc;
+     background-image: url(../images/index-topnav/ico_lang.png);
+     background-repeat: no-repeat;
+     background-position: 7px  5.5px;
+     z-index: 2;
+     overflow: hidden;
+}
+.topnav-select a,i{
+    float: left;
+    color: #666;
+}
+.topnav-select a{
+    font-size: 13px;
+}
+.topnav-select i{
+    font-size: 6px;
+    margin: 0px 4px;
+}
+.topnav-select .EN{
+    color: rgb(242,120,36);
+}
+.topnav-select a:hover{
+    color: rgb(242,120,36);
+}
+.topnav-right  .topnav-Pro{
+    float: left;
+    width: 80px;
+    height: 100%;
+    line-height:75px ;
+    text-align: center;
+    background-color: #ff6600;
+    font-size: 16px;
+    color: #fff;
+    margin-left: 160px;
+}
+/* 定义顶部导航ul里隐藏的下拉列表 */
+.topnav-right >ul ul{
+    display: none;
+    width: 225px;
+    border: #ccc 1px solid;
+    border-top: #ff6600 2px solid;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 94px;
+    opacity: 0;
+    left: 50%;
+    margin-left: -112px;
+    z-index: 2;
+    box-shadow: 0 0 5px #333;
+}
+.topnav-right >ul ul  li{
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    color: #555555;
+    padding-left: 41px;
+    line-height: 45px;
+    text-align: left;
+    font-weight: normal;
+}
+.selectDown li:after{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 5px;
+    overflow: hidden;
+    background: url(../images/index-topnav/nav_arr.png) -10px 0 no-repeat;
+    position: absolute;
+    right: 20px;
+    top: 18px;
+}
+.selectDown  li:hover:after {
+    background: url(../images/index-topnav/nav_arr.png) 0px 0 no-repeat;
+    transition: all 0.5s;
+}
+.topnav-right .fw .one{
+    border-right: none;
+    box-shadow: none;
+    height: 380px;
+    left: -66px;
+}
+.fw ul:last-child{
+    position: absolute;
+    top: 94px;
+    left: 159px;
+    height: 380px;
+    border-left: none;
+    box-shadow: none;
+}
+.fw .one li:first-child
+{
+     background-image: none;
+}
+.fw ul:last-child:before{
+    position: absolute;
+    left: -1px;
+    top: 15px;
+    content: "";
+    display: block;
+    height: 342px;
+    width: 1px;
+    background-color: #ccc;
+}
+.fw ul li:first-child{
+    margin-top: 5px;
+    color:#ff6600 ;
+}
+/* 轮播图 */
+.banner{
+    position: relative;
+    width: 100%;
+    height: 632.917px;
+}
+
+.banner .video{
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+}
+.banner .cover .text1{
+    position: absolute;
+    top: 304px;
+    left: 50%;
+    margin-left: -250px;
+    
+    z-index: 1.5;
+    opacity: 1;
+    width: 499px;
+    height: 60px;
+}
+.banner .cover .text2{
+    position: absolute;
+    top: 396px;
+    left: 24%;
+    font-size: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+}
+.banner-left,.banner-right{
+    position: absolute;
+    font-size: 15px;
+}
+.banner-left{
+    top: 50%;
+    left:0;
+    color: #fff;
+    margin-top: -1px;
+    
+}
+
+/* 侧边栏 */
+.sidebar{
+    z-index: 4;
+    position: fixed;
+     top: 199px;;
+    right: 0px;
+}
+.sidebar li{
+    position: relative;
+  transform: translateX(121px);
+    width:172px;
+    height: 50px;
+    margin-top: 1px;
+    background-color: #2e3847;
+    opacity: 0.75;
+    border-radius: 5px;
+}
+.sidebar li img{
+     position: absolute;
+     top: 12px;
+     left: 14px;
+}
+.sidebar li a{
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 58px;
+    font-size: 14px;
+
+}
+/* 侧边栏二维码 隐藏框样式 */
+.sidebar-ewm {
+    display: none;
+    position: absolute;
+    top: -177px;
+    left: -191px;
+    width: 190px;
+    height: 190px;
+    background-color: #ffffff;
+    z-index: 3;
+}
+.sidebar-ewm .ewm{
+     position: absolute;
+     top: 15px;
+     left: 18px;
+}
+.sidebar-ewm:after{
+    position: absolute;
+    right: 0;
+    bottom: -14px;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 14px solid #fff;
+    border-bottom-color:transparent;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: #fff;
+}
+/* 设置侧边栏鼠标移动上去的样式 */
+.sidebar li:first-child:hover,
+.sidebar li:nth-child(3):hover{
+    transform: translateX(0px);
+    background-color: rgb(255,102,0);
+    transition: 0.5s;
+    opacity: 1;
+}
+.sidebar li:nth-child(2):hover .sidebar-ewm{
+    display: block;
+    transition: 0.5s;
+}
+/* main  主体内容样式*/
+.ipart01{ 
+    height: 360px;
+    margin-top: 74px;
+    width: 100%;
+}
+.ipart01 >div{
+    float: left;
+    position: relative;
+    padding-left: 63px;
+    padding-right: 63px;
+    width: 33.3%;
+    height: 360px;
+    background: #ff6600;
+    transform-origin: top center;
+    transform: rotateX(-90deg); 
+    opacity: 0;
+    transform-style: preserve-3d;
+    margin-top: 161px;
+    margin-bottom: 53px;
+    
+}
+.ipart01 >div:nth-child(2){
+    background-color: rgb(242,173,10);
+}
+.ipart01 >div:last-child{
+    background-color: rgb(66,102,143);
+}
+
+.ipart01  .title{
+    display: block;
+    margin-top: 44px;
+    font-size: 28px;
+     color: #fff;
+     font-style: normal;
+     font-weight: normal;
+}
+.ipart01  .curent{
+    display: block;
+    margin-top: 18px;
+    color: #fff;
+    font-size: 14px;
+}
+.list{
+    float: left;
+    margin-top: 22px;
+    margin-right: 65px;
+}
+.list li {
+    height: 23px;
+    line-height:23px;
+    color: #fff;
+    font-style: 15px;
+}
+.list li a{
+    height: 23px;
+    line-height: 23px;
+    color: #fff;
+    font-style: 15px;
+}
+.list li i{
+    float: left;
+    width: 13px;
+    height: 13px;
+    margin-right: 8px;
+    background-image: url(../images/index-page-main/list_arr.png);
+    background-repeat: no-repeat;
+    background-position-x: -15px;
+    margin-top: 1px;
+}
+.list a p{
+    float: left;
+    margin-top: 0px;
+}
+/* 设置鼠标移动到每个li上时箭头的变化 */
+.list li a:hover i{
+    background-position-x: 0px;
+    transition: 0.5s;
+}
+.ipart01-more{
+    position: absolute;
+    bottom: 32px;
+    right: 29px;
+    border: 1px solid #fff;
+    width: 45px;
+    height: 45px;
+    background-image: url(../images/index-page-main/ipart01_arr.png);
+    background-repeat: no-repeat;
+    background-position-x: -48px;
+    background-position-y: -2px;
+}
+.ipart01 >div:hover .ipart01-more{
+    background-position-x: 0px;
+    background-color: #fff;
+    transition: 0.3s;  
+}
+/* 精彩案例专栏 */
+.jcal{
+    position: relative;
+}
+.jcal .jcal-title{
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    color: #000;
+    font-size: 46px;
+    margin-top: 74px;
+}
+
+.jcal p{
+    width: 100%;
+    font-size: 29px;
+    color: #777777;
+    margin-top: 27px;
+    text-align: center;
+
+}
+.jcal .jcal-nav{
+    width: 1137px;
+    margin: 59px  auto;
+    margin-bottom: 0px;
+    text-align: center;
+    height:54px;
+}
+.jcal .jcal-nav a{
+    float: left;
+    line-height: 54px;
+    height: 54px;
+    margin-right: 63px;
+    color: #555;
+    font-size: 15px;
+}
+.jcal .jcal-nav a{
+    position: relative;
+}
+.jcal .jcal-nav a:after{
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -39px;
+    width: 0x;
+    height: 1px;
+    background-color: #ff6600;
+}
+ .jcal-nav li .last:after{
+    margin-left: -54.5px;
+    width: 0px;
+}
+.jcal .jcal-nav .new:after{
+     margin-left: -32px;
+     width: 62px;
+}
+.jcal .jcal-nav a:hover:after{
+    width: 78px;
+    /* transition: all 2s; */
+}
+.jcal-nav  li .last:hover:after{
+     width: 109px;
+}
+/* 精彩案例 主体导航 */
+.jcal .jcal-main{
+    width: 100%;
+    margin-top: 37px;
+}
+.jcal .jcal-main li{
+    position: relative;
+    float: left;
+    width: 25%;
+    height: 283px;
+}
+.jcal-main li img{
+   width: 100%;
+   height: 283px;
+}
+/**/
+.jcal-main li .zhezao{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff6600;
+    opacity: 0.8;
+    padding:0px  36px;
+    color: #fff;
+    z-index: 3;
+   
+}
+.jcal-main  .zhezao span{
+    position: relative;
+    display: block;
+    margin-top: 32px;
+    font-size: 16px;
+}
+.jcal-main  .zhezao span:after{
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    width: 33px;
+    height: 1px;
+    background-color: #fff;
+}
+.jcal-main .zhezao .four:after{
+    width: 62px;
+}
+.jcal-main .zhezao .five:after{
+    width: 106px;
+}
+.jcal-main .zhezao h3{
+    font-size: 22px;
+    margin-top: 40px;
+    font-weight: 400;
+}
+.jcal-main .zhezao p{
+    display: block;
+    margin-top: 17px;
+    font-size: 12px;
+    color: #fff;
+    text-align: left;
+}
+/* 鼠标移动到 jacl-main 上遮罩层显示 */
+.jcal-main li:hover .zhezao{
+    display: block;   
+}
+.jcal-main li:hover span{
+    animation: moveY 0.2s linear ;   
+}
+
+/* 定义遮罩层向上移动动画 */
+@keyframes moveY{
+     0%{
+        margin-top: 52px;
+     }
+     100%{
+        margin-top: 32px;
+    }
+}
+/* 查看更多案例 */
+ .more{
+    position: relative;
+    margin: 41px auto;
+    margin-bottom: 0px;
+    width: 240px;
+    height: 40px;
+    padding-left:60px ;
+    color: #ff6600;
+    border: 1px solid #ff6600;
+}
+  .more span{
+     display: block;
+    width: 100%;
+    height: 100%;
+    line-height:40px;
+    font-size: 13px;
+    text-align: left;
+}
+  .more i{
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    margin-top: -6px;
+    width: 25px;
+    height: 13px;
+    background: url(../images/index-page-main/jcal/ipart01_arr.png);
+    background-repeat: no-repeat;
+    background-position-x: -25px;
+    
+}
+.more:hover{
+    background-color: #ff6600;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: all 0.5s;
+}
+ .more:hover i{
+    background-position-x: 0px;
+}
+/* 第三分栏最新动态 */
+.new-active{
+    background-color: #f5f7f8;
+    width: 100%;
+    height: 533px;
+    margin-top: 40px;
+    padding: 0 74px;
+    padding-top: 40px;
+}
+.new-active > .title{
+    font-size: 40px;
+    color: #000;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+}
+.new-active .active-main{
+    width: 100%;
+    height: 286.79px;
+    margin-top: 37px;
+    background-color: #fff;
+    z-index: 4;
+}
+.new-active .active-main  .item{
+    position: relative;
+    float: left;
+    width: 33.3%;
+    height: 100%;
+    padding: 35px 45.575px 70px ;
+    border-right: 1px solid rgb(221,221,221);
+}
+.active-main .item:last-child{
+    border-right: none;
+}
+.active-main .item  .time{
+    display: inline-block;
+    border-bottom: #fac9a7 2px solid;
+    height: 30px;
+    line-height: 30px;
+    color: #878787;
+    margin-bottom: 15px;
+}
+.active-main .item  img{
+    display: block;
+    width: 119.99px;
+    height: 84.68px;
+}
+.active-main  .item .title{
+    position: absolute;
+    top: 82px;
+    right: 51px;
+    display: block;
+    width: 232.73px;
+    height: 80px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.active-main  .item .text{
+    margin-top: 10px;
+    font-size: 13px;
+    color: #878787;
+}
+/* 鼠标hover效果 */
+.active-main  .item:hover .title{
+color: #ff6600;
+}
+.new-active .more{
+    background-color: rgb(57,66,75);
+    border: none;
+    color: #fff;
+}
+.new-active .more i{
+    background-position-x: 0px;
+}
+.new-active .more:hover{
+    background-color: #ff6600;
+}
+
+/* 第四栏行业解决方案 */
+.ipart04 .title{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: normal;
+    color: #000;
+    margin-top: 49px;
+}
+.ipart04 .text{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+    color: #777777;
+    margin-top: 16px;
+}
+.ipart04-mainnav{
+    height: 430px;
+    margin: 0px 94px;
+    background-image: url(../images/index-page-main/ipart02/gcjx.jpg);
+}
+.ipart04-mainnav  .item{
+    position: relative;
+    float: left;
+    width:13.51% ;
+    height: 100%;
+    border-right: 1px solid rgb(140,146,146);
+    padding: 45px 27px;
+    color: #fff;
+    overflow: hidden;
+}
+.ipart04-mainnav  .item:nth-child(2){
+    width: 32.42%;
+}
+.ipart04-mainnav  .item:last-child{
+    border-right: none;
+}
+.item  .ch{
+    font-size: 24px;
+}
+.item  .ch  .en{
+    font-size: 16px;
+    font-family: "Arial";
+    opacity: 0.5;
+    padding-top: 18px;
+    display: block;
+    width: 112.8px;
+}
+.ipart04-mainnav  .innerBox{
+    display: none;
+}
+.ipart04-mainnav .two .innerBox{
+    display: block;
+}
+.ipart04-mainnav .two .ch{
+    display: none;
+}
+.item  .innerBox .innerBox-title{
+   margin-top: 200px;
+    font-size: 32px;
+    color: #fff;
+}
+
+.item  .innerBox p{
+    display: block;
+    padding-top: 8%;
+    margin-top: 125px;
+    line-height: 169%;
+    font-size: 14px;
+    width: 100%; 
+}
+.item  .innerBox .inner-more{
+    position: absolute;
+    bottom: 90px;
+    left: 27px;
+    width: 43px;
+    height: 43px;
+    border: 1px solid #fff;
+    background-image: url("../images/index-page-main/ipart02/common_more.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    display: none;
+    opacity: 0;
+}
+.item  .innerBox .inner-more:hover{
+    background-color: #fff;
+    background-position: -46px  0;
+}
+/* 第五分栏 */
+.ipart05{
+    width: 100%;
+    height: 253px;
+    background-color: rgb(255,93,0);
+    margin-top: 42px;
+    padding: 0 74px;
+}
+.ipart05 .nums{
+    width: 100%;
+}
+.ipart05 .nums li{
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding-top: 55px;
+    font-size: 15px;
+    color: #fff;
+}
+.ipart05 .nums .num{
+    width: 100%;
+    line-height:1.1 ;
+}
+.nums .num .num1{
+    font-size: 83px;
+    color: #fff;
+    font-weight: 790;
+}
+/* 底部栏 */
+.foot1{
+    width: 100%;
+    height: 340px;
+    background-color: rgb(57,66,75);
+    padding: 50px 74px 35px;
+}
+.foot1 .box{
+     float: left;
+     width: 160px;
+     margin-right: 71px;
+}
+.foot1 .box .ewm{
+     width: 160px;
+     height: 160px;
+     margin-top: 16px;
+}
+.foot1 dl{
+    float: left;
+    padding-left: 51.1477px;
+    color: #fff;
+    width: 204.59px;
+    height: 253.27px;
+}
+.foot1  dt a{
+    display: block;
+    font-size: 18px;
+    margin-bottom: 14px;
+    color: #fff;
+    
+}
+.foot1  dd a{
+    display: block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #a2a5a8;
+}
+.foot2 {
+    width: 100%;
+    padding: 0px 74px;
+    height: 55px;
+    background-color: rgb(57,66,75);
+}
+.foot2 .foot2-box{
+     width: 100%;
+     height: 55px;
+     line-height: 55px;
+     border-top: 1px  solid rgb(77,85,93);
+     border-bottom: 1px  solid rgb(77,85,93);
+}
+.foot2 .foot2-box span{
+    float: left;
+    line-height: 55px;
+    font-size: 12px;
+    color: #a2a5a8;
+    margin-right: 97px;
+}
+.foot2 .foot2-box .last{
+    margin-left: -97px;
+    font-size: 20px;
+    color: #ff6600;
+}
+
+.foot3 {
+    width: 100%;
+    height: 79px;
+    background-color: rgb(57,66,75);
+}
+.foot3 .foot3-box{
+    width: 100%;
+    height: 79px;
+    padding: 0px 74px;
+}
+.foot3 .foot3-box  span,
+.foot3 .foot3-box a,
+.foot3 .foot3-box i,
+.foot3 .foot3-box img{
+    float: left;
+    color: #a2a5a8;
+    margin-right: 24px;
+    margin-top: 9px;
+    margin-left: 0px;
+}
+.foot3 .foot3-box img{
+    margin-top: -3px;
+}
+.foot3 .foot3-box  .span{
+    opacity: 0;
+}
+.foot1  a:hover,
+.foot2 a:hover,
+.foot3 a:hover{
+     color: #fff;
+}

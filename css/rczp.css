@@ -1,0 +1,546 @@
+body{
+    height: 1000px;
+}
+/* 人才招聘 头部导航 */
+.rczp-top{
+    width: 100%;
+    padding-left: 48px;
+    height: 75px;
+    text-align: center;
+    line-height: 75px;
+    border-bottom: 1px solid  #ff6600;
+}
+.rczp-top .rczp-logo{
+    float: left;
+    height: 36px;
+     width: 141px;
+     margin-top: 20px;
+     margin-right: 26px;
+}
+.rczp-top  .title{
+    float: left;
+    width: 93px;
+    height: 45px;
+    line-height: 45px;
+    margin-top: 15px;
+    text-align: right;
+    border-left:1px solid #ccc;
+    font-size: 23px;
+    font-weight: normal;
+}
+.rczp-top .topnav-right{
+     float: right;
+     height: 100%;
+}
+.rczp-top .topnav-right .nav{
+    float: left;
+}
+.topnav-right .nav li{
+    float: left;
+}
+.topnav-right .nav a{
+    float: left;
+    font-size: 16px;
+    width: 174px;
+    height:75px;
+    text-align: center;
+    font-weight: bold;
+    color: #313131;
+}
+.topnav-right  .gw{
+     float: left;
+     margin-left: 198px;
+     width: 80px;
+     height: 100%;
+     background-color: #ff6600;
+     color: #fff;
+     font-size: 15px;
+}
+/* 轮播图栏 */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 450px;
+  
+}
+.banner .banner-img  {
+    width: 100%;
+    overflow: hidden;
+}
+.banner .banner-img li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:  1920px;
+    height: 450px;
+}
+.banner .banner-img li:last-child{
+    position: absolute;
+    top: 0;
+    left: 1920px;
+}
+
+.banner-img{
+    width: 1920px;
+    height: 450px;
+}
+.banner .arr-left,
+.banner  .arr-right{
+    position: absolute;
+    top: 50%;
+     margin-top: -42px;
+     width: 44px;
+     height: 84px;
+     background-image: url(../images/rczp/rczp-banner/banner_arr.png);
+     background-repeat: no-repeat;
+     background-position: 0px 0px;
+}
+.banner .arr-left{
+      left: 39px;
+}
+.banner .arr-right{
+      right: 39px;
+      background-position: -51px -6px;
+}
+.banner .before{
+      position: absolute;
+      bottom: 9px;
+      left: 50%;
+      margin-left: -20px;
+      width: 52px;
+      height: 14px;
+}
+.banner .before li{
+     float: left;
+     width: 14px;
+     height: 14px;
+     background-color: #ccc;
+     border-radius: 50%;
+     margin-right: 12px;
+}
+.banner .before li:first-child{
+    background-color: #ff6600;
+}
+/* 当鼠标移动到左右两个箭头上时箭头的颜色进行切换 */
+/* .banner  div:hover{
+    background-position-y: -96px;
+    transition: 0.5s;
+} */
+
+/* banner盒子下的导航栏 */
+.banner-bottom{
+    width: 100%;
+    height:260px ;
+}
+.banner-bottomLeft {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: #607cda;
+}
+.banner-bottom  .banner-bottomLeft .more{
+    position: absolute;
+    bottom:30px ;
+    right: 30px;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #fff;
+    background-image: url(../images/rczp/rczp-banner/ipart01_arr.png);
+    background-position: 45px 0px;
+}
+.banner-bottom:hover  .more{
+    background-position:  90px 0px;
+    background-color: #fff;
+    transition: 0.5s;
+ }
+.banner-bottom  .banner-bottomRight{
+    float: left;
+    width: 25%;
+    height: 100%;
+    background-color: #fffc00;
+    padding-left: 50px;
+}
+.banner-bottom  .banner-bottomRight img{
+     width: 140px;
+     height: 59px;
+     margin-top: 45px;
+     margin-bottom: 19px;
+}
+.banner-bottom  .banner-bottomRight .text{
+     display: block;
+     font-size: 27px;
+     color: #424400;
+}
+.banner-bottom  .banner-bottomRight:last-child{
+    background-color: #ffde00;
+}
+/* 侧边栏 */
+.sidebar{
+    z-index: 4;
+    position: fixed;
+     top: 199px;;
+    right: 0px;
+}
+.sidebar li{
+    position: relative;
+  transform: translateX(121px);
+    width:172px;
+    height: 50px;
+    margin-top: 1px;
+    background-color: #2e3847;
+    opacity: 0.75;
+    border-radius: 5px;
+}
+.sidebar li img{
+     position: absolute;
+     top: 12px;
+     left: 14px;
+}
+.sidebar li a{
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 58px;
+    font-size: 14px;
+
+}
+/* 侧边栏二维码 隐藏框样式 */
+.sidebar-ewm {
+    display: none;
+    position: absolute;
+    top: -177px;
+    left: -191px;
+    width: 190px;
+    height: 190px;
+    background-color: #ffffff;
+    z-index: 3;
+}
+.sidebar-ewm .ewm{
+     position: absolute;
+     top: 15px;
+     left: 18px;
+}
+.sidebar-ewm:after{
+    position: absolute;
+    right: 0;
+    bottom: -14px;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 14px solid #fff;
+    border-bottom-color:transparent;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: #fff;
+}
+/* 设置侧边栏鼠标移动上去的样式 */
+.sidebar li:first-child:hover,
+.sidebar li:nth-child(3):hover{
+    transform: translateX(0px);
+    background-color: rgb(255,102,0);
+    transition: 0.5s;
+    opacity: 1;
+}
+.sidebar li:nth-child(2):hover .sidebar-ewm{
+    display: block;
+    transition: 0.5s;
+}
+/* 招聘主要内容栏 */
+.main .main-title{
+    width: 100%;
+    text-align: center;
+    margin-top: 46px;
+    font-size: 40px;
+    color: #333333;
+    margin-bottom: 21px;
+}
+.main .text{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 36px;
+    color: #7c7c7c;
+}
+.main .info{
+    position: relative;
+    float: left;
+    width: 25%;
+    height: 480px;  
+}
+.main .info{
+    position: relative;
+    padding-top: 54px;
+    padding-left: 50px;
+    color: #fff;
+    font-size: 28px;
+    
+}
+.main .info a{
+    color: #fff;
+}
+.main .info .more{
+    position: absolute;
+    top:50% ;
+    right: 30px;
+    margin-top: -24px;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #fff;
+    background-image: url(../images/rczp/rczp-banner/ipart01_arr.png);
+    background-position: 45px 0px;
+}
+
+ .main-body >div:nth-child(2){
+     background-color: #ff6600;
+ }
+ .main-body >div:nth-child(4){
+    background-color: rgb(44,188,177);
+}
+.main-body >div:nth-child(5){
+    background-color: rgb(246,190,0);
+}
+.main-body >div:nth-child(7){
+    background-color: rgb(75,180,230);
+}
+.main-body >div:nth-child(10){
+    background-color: rgb(77,46,131);
+}
+.main-body >div:nth-child(12){
+    background-color: rgb(57,66,75);
+}
+.info .icon{
+     position: absolute;
+     left: 0;
+     top: 0;
+    display: inline-block;
+    width: 15px;
+    height: 20px;
+    background: url(../images/rczp/rczp-main/list_arr.png) -13px -4px  no-repeat;
+}
+.info .text{
+    position: relative;
+    padding-left: 22px;
+     display: block;
+     margin-top: 15px;
+     font-size: 12px;
+     color: #fff;
+     text-align: left;
+}
+.info .text:hover .icon{
+    background-position-x: 0px;
+    transition: 0.3s;
+}
+.info:before{
+    z-index: 3;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -32px;
+    left: -32px;
+    border-top: 16px solid transparent;
+    border-left: 16px solid transparent;
+    border-right: 16px solid #ff6600;
+    border-bottom: 16px solid transparent;
+}
+.main-body >div:nth-child(4):before{
+    border-right: 16px solid rgb(44,188,177);
+}
+.main-body >div:nth-child(10):before{
+  border-right: 16px solid rgb(77,46,131);
+}
+.main-body >div:nth-child(12):before{
+    border-right: 16px solid rgb(57,66,75);
+}
+.main-body .right:before{
+    display: none;
+}
+.main-body .right:after{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    margin-top: -32px;
+    right: -32px;
+    border-top: 16px solid transparent;
+    border-left: 16px solid rgb(246,190,0);
+    border-right: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    z-index: 4;
+}
+.main-body .left:after{
+    border-left: 16px solid rgb(75,180,230);
+} 
+/* 招聘盒子里的内容 */
+.main-body .zp{
+    padding-left: 216px;
+}
+.main-body .zp a{
+    display: block;
+    margin-bottom: 26px;
+}
+.main-body .zp .text{
+    display: block;
+    font-size: 12px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 9px;
+    
+}
+/* 鼠标移动到img图片上 图片进行放大效果 */
+.main-body >a{
+    float: left;
+    overflow: hidden;
+    width: 25%;
+    height: 480px;
+}
+.main-body img{
+    width: 100%;
+    height: 100%;
+    
+}
+/* 招聘信息栏 */
+.information{
+    opacity: 0;
+    position: relative;
+    padding-left: 42px;
+    width: 500px;
+    height: 81px;
+    margin: 92px auto;
+    border: 1px solid #ccc;
+    margin-top: 132px;
+}
+.information  b{
+   float: left;
+   font-size: 36px;
+   margin-right: 14px;
+   color: #bcbcbc;
+   height: 100%;
+   line-height: 81px;
+}
+.information  .text{
+    float: left;
+    font-size: 50px;
+    color: rgb(85,85,85);
+    height: 100%;
+    line-height: 81px;
+ }
+ .information  .top{
+     position: absolute;
+     display: block;
+     top: -7px;
+     left: 50%;
+     margin-left: -125px;
+     width: 250px;
+     height: 14px;
+     background-color: #fff;
+     color: #000;
+     text-align: center;
+
+ }
+ .information  .text:hover{
+     color: #ff6600;
+ }
+ .information  .top a{
+    color: #ff6600;
+ }
+    
+/* 底部栏 */
+.foot1{
+    width: 100%;
+    height: 340px;
+    background-color: #ff6600;
+    padding: 50px 74px 35px;
+}
+.foot1 .box{
+     float: left;
+     width: 160px;
+     margin-right: 71px;
+}
+.foot1 .box .ewm{
+     width: 160px;
+     height: 160px;
+     margin-top: 16px;
+}
+.foot1 dl{
+    float: left;
+    padding-left: 51.1477px;
+    color: #fff;
+    width: 204.59px;
+    height: 253.27px;
+}
+.foot1  dt a{
+    display: block;
+    font-size: 18px;
+    margin-bottom: 14px;
+    color: #fff;
+    
+}
+.foot1  dd a{
+    display: block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #fff;
+}
+.foot2 {
+    width: 100%;
+    padding: 0px 74px;
+    height: 55px;
+    background-color: #ff6600;
+}
+.foot2 .foot2-box{
+     width: 100%;
+     height: 55px;
+     line-height: 55px;
+     border-top: 1px  solid #fff;
+     border-bottom: 1px  solid #fff;
+}
+.foot2 .foot2-box span{
+    float: left;
+    line-height: 55px;
+    font-size: 12px;
+    color: #fff;
+    margin-right: 97px;
+}
+.foot2 .foot2-box .last{
+    margin-left: -97px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.foot3 {
+    width: 100%;
+    height: 79px;
+    background-color: #ff6600;
+}
+.foot3 .foot3-box{
+    width: 100%;
+    height: 79px;
+    padding: 0px 74px;
+}
+.foot3 .foot3-box  span,
+.foot3 .foot3-box a,
+.foot3 .foot3-box i,
+.foot3 .foot3-box img{
+    float: left;
+    color: #fff;
+    margin-right: 24px;
+    margin-top: 9px;
+    margin-left: 0px;
+}
+.foot3 .foot3-box img{
+    margin-top: -3px;
+}
+.foot3 .foot3-box  .span{
+    opacity: 0;
+}
+.foot1  a:hover,
+.foot2 a:hover,
+.foot3 a:hover{
+     color: #fff;
+}
