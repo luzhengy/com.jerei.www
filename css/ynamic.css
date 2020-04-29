@@ -1,0 +1,544 @@
+
+/* 捷瑞顶部导航 */
+.topnav{
+    width: 100%;
+    height: 75px;
+}
+.topnav  .index-logo{
+    float: left;
+    margin-top: 15px;
+    margin-left: 48px;
+    width: 280px;
+    height: 45px;
+}
+.topnav .topnav-right{
+    position: relative;
+    float: right;
+}
+
+.topnav-right ul {
+    float: left;
+    margin-right: 75px;
+}
+.topnav-right ul  li{
+    position: relative;
+    float: left;
+    width: 128px;
+    height:100%;
+     line-height: 75px;
+    text-align: center;
+    font-size: 16px;
+    color: #313131;
+    font-weight: 700;
+    z-index: 2;
+}
+.topnav-right .cur a{
+    color: #ff6600;
+}
+.topnav-right  .topnav-select{
+     position: absolute;
+     top: 24px;
+     right: 107px;
+     width: 63px;
+     background-color: #fff;
+     height: 26px;
+     line-height: 26px;
+     padding-left: 29px;
+     border-radius: 13px;
+     border: 1px solid #ccc;
+     background-image: url(../images/index-topnav/ico_lang.png);
+     background-repeat: no-repeat;
+     background-position: 7px  5.5px;
+     z-index: 2;
+     overflow: hidden;
+}
+.topnav-select a,i{
+    float: left;
+    color: #666;
+}
+.topnav-select a{
+    font-size: 13px;
+}
+.topnav-select i{
+    font-size: 6px;
+    margin: 0px 4px;
+}
+.topnav-select .EN{
+    color: rgb(242,120,36);
+}
+.topnav-select a:hover{
+    color: rgb(242,120,36);
+}
+.topnav-right  .topnav-Pro{
+    float: left;
+    width: 80px;
+    height: 100%;
+    line-height:75px ;
+    text-align: center;
+    background-color: #ff6600;
+    font-size: 16px;
+    color: #fff;
+    margin-left: 160px;
+}
+/* 定义顶部导航ul里隐藏的下拉列表 */
+.topnav-right >ul ul{
+    display: none;
+    width: 225px;
+    border: #ccc 1px solid;
+    border-top: #ff6600 2px solid;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 94px;
+    opacity: 0;
+    left: 50%;
+    margin-left: -112px;
+    z-index: 2;
+    box-shadow: 0 0 5px #333;
+}
+.topnav-right >ul ul  li{
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    color: #555555;
+    padding-left: 41px;
+    line-height: 45px;
+    text-align: left;
+    font-weight: normal;
+}
+.selectDown li:after{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 5px;
+    overflow: hidden;
+    background: url(../images/index-topnav/nav_arr.png) -10px 0 no-repeat;
+    position: absolute;
+    right: 20px;
+    top: 18px;
+}
+.selectDown  li:hover:after {
+    background: url(../images/index-topnav/nav_arr.png) 0px 0 no-repeat;
+    transition: all 0.5s;
+}
+.topnav-right .fw .one{
+    border-right: none;
+    box-shadow: none;
+    height: 380px;
+    left: -66px;
+}
+.fw ul:last-child{
+    position: absolute;
+    top: 94px;
+    left: 159px;
+    height: 380px;
+    border-left: none;
+    box-shadow: none;
+}
+.fw .one li:first-child
+{
+     background-image: none;
+}
+.fw ul:last-child:before{
+    position: absolute;
+    left: -1px;
+    top: 15px;
+    content: "";
+    display: block;
+    height: 342px;
+    width: 1px;
+    background-color: #ccc;
+}
+.fw ul li:first-child{
+    margin-top: 5px;
+    color:#ff6600 ;
+}
+/* 侧边栏 */
+.sidebar{
+    z-index: 4;
+    position: fixed;
+     top: 199px;;
+    right: 0px;
+}
+.sidebar li{
+    position: relative;
+  transform: translateX(121px);
+    width:172px;
+    height: 50px;
+    margin-top: 1px;
+    background-color: #2e3847;
+    opacity: 0.75;
+    border-radius: 5px;
+}
+.sidebar li img{
+     position: absolute;
+     top: 12px;
+     left: 14px;
+}
+.sidebar li a{
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 58px;
+    font-size: 14px;
+
+}
+/* 侧边栏二维码 隐藏框样式 */
+.sidebar-ewm {
+    display: none;
+    position: absolute;
+    top: -177px;
+    left: -191px;
+    width: 190px;
+    height: 190px;
+    background-color: #ffffff;
+    z-index: 3;
+}
+.sidebar-ewm .ewm{
+     position: absolute;
+     top: 15px;
+     left: 18px;
+}
+.sidebar-ewm:after{
+    position: absolute;
+    right: 0;
+    bottom: -14px;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 14px solid #fff;
+    border-bottom-color:transparent;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: #fff;
+}
+/* 设置侧边栏鼠标移动上去的样式 */
+.sidebar li:first-child:hover,
+.sidebar li:nth-child(3):hover{
+    transform: translateX(0px);
+    background-color: rgb(255,102,0);
+    transition: 0.5s;
+    opacity: 1;
+}
+.sidebar li:nth-child(2):hover .sidebar-ewm{
+    display: block;
+    transition: 0.5s;
+}
+/* 第五分栏 */
+.ipart05{
+    width: 100%;
+    height: 253px;
+    background-color: rgb(255,93,0);
+    padding: 0 74px;
+}
+.ipart05 .nums{
+    width: 100%;
+}
+.ipart05 .nums li{
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding-top: 55px;
+    font-size: 15px;
+    color: #fff;
+}
+.ipart05 .nums .num{
+    width: 100%;
+    line-height:1.1 ;
+}
+.nums .num .num1{
+    font-size: 83px;
+    color: #fff;
+    font-weight: 790;
+}
+/* 底部栏 */
+.foot1{
+    width: 100%;
+    height: 340px;
+    background-color: rgb(57,66,75);
+    padding: 50px 74px 35px;
+}
+.foot1 .box{
+     float: left;
+     width: 160px;
+     margin-right: 71px;
+}
+.foot1 .box .ewm{
+     width: 160px;
+     height: 160px;
+     margin-top: 16px;
+}
+.foot1 dl{
+    float: left;
+    padding-left: 51.1477px;
+    color: #fff;
+    width: 204.59px;
+    height: 253.27px;
+}
+.foot1  dt a{
+    display: block;
+    font-size: 18px;
+    margin-bottom: 14px;
+    color: #fff;
+    
+}
+.foot1  dd a{
+    display: block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #a2a5a8;
+}
+.foot2 {
+    width: 100%;
+    padding: 0px 74px;
+    height: 55px;
+    background-color: rgb(57,66,75);
+}
+.foot2 .foot2-box{
+     width: 100%;
+     height: 55px;
+     line-height: 55px;
+     border-top: 1px  solid rgb(77,85,93);
+     border-bottom: 1px  solid rgb(77,85,93);
+}
+.foot2 .foot2-box span{
+    float: left;
+    line-height: 55px;
+    font-size: 12px;
+    color: #a2a5a8;
+    margin-right: 97px;
+}
+.foot2 .foot2-box .last{
+    margin-left: -97px;
+    font-size: 20px;
+    color: #ff6600;
+}
+
+.foot3 {
+    width: 100%;
+    height: 79px;
+    background-color: rgb(57,66,75);
+}
+.foot3 .foot3-box{
+    width: 100%;
+    height: 79px;
+    padding: 0px 74px;
+}
+.foot3 .foot3-box  span,
+.foot3 .foot3-box a,
+.foot3 .foot3-box i,
+.foot3 .foot3-box img{
+    float: left;
+    color: #a2a5a8;
+    margin-right: 24px;
+    margin-top: 9px;
+    margin-left: 0px;
+}
+.foot3 .foot3-box img{
+    margin-top: -3px;
+}
+.foot3 .foot3-box  .span{
+    opacity: 0;
+}
+.foot1  a:hover,
+.foot2 a:hover,
+.foot3 a:hover{
+     color: #fff;
+}
+
+.case-video{
+    width: 100%;
+    height: 282px;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    /* min-height: 282px; */
+    max-width: 282px;
+  }
+  .video-box{
+      width: 100%;
+      height: 282px;
+      overflow: hidden;
+  }
+ /* 主体导航 */
+ .mainnav{
+     width: 100%;
+ }
+ .mainnav .mainnav-top{
+     width: 100%;
+     height: 66px ;
+     border-bottom: 1px solid #e3e3e3;
+ }
+ .mainnav .mainnav-top ul{
+     width: 390px;
+     height: 100%;
+     margin: 0 auto;
+ }
+ .mainnav-top ul li{
+     position: relative;
+     float: left;
+     width: 130px;
+     height: 100%;
+     line-height: 66px;
+     text-align:center;
+     
+ }
+ .mainnav-top li a{
+     position: relative;
+    color: #666;
+    font-size: 15px;
+ }
+ .mainnav-top li:first-child a{
+    color: #ff6600;
+}
+
+ .mainnav-top li a:after{
+     position: absolute;
+     display: block;
+     content: "";
+     width: 60px;
+     height: 1px;
+     bottom: -23px;
+     left: -13px;
+     background-color: #ff6600;
+ }
+ .mainnav-top li:nth-child(2) a:after,
+ .mainnav-top li:nth-child(3) a:after{
+        width: 90px;
+        display: none;
+ }
+ .mainnav-top li:after{
+      position: absolute;
+      display: block;
+      content: "";
+      right: 0px;
+      top: 25px;
+      width: 1px;
+      height: 16px;
+      background-color: #e3e3e3;
+ }
+ .mainnav-top li:nth-child(3):after{
+     display: none;
+ }
+ /* 鼠标移动到每个li上出现的效果 */
+ .mainnav-top li:hover a{
+    color: #ff6600;
+}
+.mainnav-top li:hover a:after{
+    display: block;
+    transition: 0.2s;
+}
+/* 主体导航身体部分 */
+.mainnav .mainnav-body{
+    position: relative;
+    width:100%;
+    height: 1699px;
+    background-color: rgb(245,247,248);
+    overflow: hidden;
+}
+.mainnav-body ul{
+    padding: 0 95px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.mainnav-body .gsxw{
+    display: block;
+}
+ .mainnav-body ul li{
+     width: 100%;
+     height: 327px;
+     margin-top: 60px;
+ }
+ .mainnav-body  li .item{
+     float: left;
+     width: 33.33%;
+     height: 100%;
+     padding-top: 45px;
+     padding-left: 58px;
+     padding-right: 64px;
+     border-right: 1px solid #f5f7f8;
+     background-color: #fff;
+ }
+ /* .mainnav-body   .item .box{
+     width: 100%;
+     height: 107px;
+ } */
+ .mainnav-body  .item .item-title{
+     position: relative;
+     font-size: 12px;
+     color: #878787;
+     margin-bottom: 35px;
+     font-weight: normal;
+     width: 100%;
+     text-align:left;
+ }
+ .mainnav-body  .item .item-title:after{
+      display: block;
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      width: 83px;
+      height: 2px;
+      background-color: #fac9a7;
+ }
+ .mainnav-body  .item  img{
+     float: left;
+     width: 151px;
+     height:107px;
+ }
+ .mainnav-body  .item .item-text{
+    
+     font-size: 15px;
+     color: #555;
+     line-height: 200%;
+     margin-left: 14px;
+ }
+ .mainnav-body  .item p{
+    margin-top: 16px;
+    font-size: 12px;
+    color: #878787;
+    line-height: 200%;
+}
+.mainnav-body  .item .item-text:hover{
+    color: #ff6600;
+}
+/* 底部导航 */
+.mainnav-bottom{
+   position: absolute;
+   left: 50%;
+   bottom: 70px;
+   margin-left: -221.5px;
+    width: 443px;
+    height: 47px;
+    border: 1px solid #ededed;
+
+}
+.mainnav-bottom a,
+.mainnav-bottom i{
+    float: left;
+    width: 49px;
+    height: 47px;
+    text-align: center;
+    line-height: 47px;
+    color: #000;
+    font-size: 12px;
+    border-right: 1px solid #ededed;
+    font-weight: 900;
+    
+}
+.mainnav-bottom i{
+    border-right: none;
+    color: #ff6600;
+}
+.mainnav-bottom a:hover,
+.mainnav-bottom i:hover{
+    background-color: #ff6600;
+    color: #fff;
+}
